@@ -20,6 +20,9 @@ app.get("/hw4", (req, res)=>{
 app.get("/test", (req, res) => {
     res.json({ message: "Hello"})
 })
+app.get('*', (req, res) => {
+    res.sendFile(__dirname+'/hw2/public/index.html')
+})
 
 app.listen(port, (err)=>{
     if (err) {

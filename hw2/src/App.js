@@ -76,13 +76,18 @@ let itemsList = items.map((item, index) => {
 
 // puts in the array that has now been sorted appropriately
 function App() {
+  const [data, setData] = React.useState(null)
   React.useEffect(() => {
     console.log("hello world")
+    fetch("/test")
+      .then((res) => res.json())
+      .then((data) => setData(data.message))
   })
 
   return (
     <div style={gridContainer}>
       {itemsList}
+      <p>{!data ? "Loading...": data}</p>
     </div>
   );
 }
