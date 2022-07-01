@@ -1,0 +1,30 @@
+.grid-container {
+  display: grid;
+  grid-template-columns: auto auto auto auto auto auto auto auto;
+  max-width: 50%;
+  padding: 10px;
+  border-spacing: 5px;
+  gap: 5px;
+}
+
+.grid-prime {
+  display: grid;
+  text-align: center;
+  background-color: red;
+  border: 2px solid black;
+  padding: 20px;
+}
+
+.grid-even {
+  display: grid;
+  text-align: center;
+  background-color: green;
+  padding: 20px;
+}
+
+.grid-odd {
+  display: grid;
+  text-align: center;
+  background-color: yellow;
+  padding: 20px;
+}
