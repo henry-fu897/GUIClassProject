@@ -8,9 +8,6 @@ app.use(express.static(path.join(__dirname)))
 app.get("/hw1", (req, res)=>{
     res.sendFile(__dirname+'/hw1/hw1.html')
 })
-app.get("/hw2", (req, res)=>{
-    res.sendFile(__dirname+'/hw2/public/index.html')
-})
 app.get("/hw3", (req, res)=>{
     res.sendFile(__dirname+'/hw3/hw3.html')
 })
