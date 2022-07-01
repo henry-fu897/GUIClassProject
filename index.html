@@ -2,10 +2,37 @@
 <html lang="en">
 <html>
     <head>
+        <link rel="stylesheet" href="hw1.css">
         <title>Class Project</title>
         <h1>Henry Fu Final Project</h1>
         <p>It's all coming together</p>
+        <div class = "tab">
+            <button class="tabbutton" onclick="openTab(event, 'Home')" id="default">Home</button>
+            <button class="tabbutton" onclick="openTab(event, 'About')">About Me</button>
+            <button class="tabbutton" onclick="openTab(event, 'Contact')">Contact Information</button>
+          </div>
     </head>
 
+    <body>
+        <div id="Home" class="tabcontent">
+            <title>Home</title>
+            <h2>Home</h2>
+            <p>Hello! My name is Henry and I am currently a senior CS student at Virginia Tech</p>
+            <p></p>
+        </div>
+
+        <div id="About" class="tabcontent">
+            <title>About Me</title>
+            <h3>About Me</h3>
+            <p>This is about me! Hi! I'm Henry.</p>
+            <p>Just a CS student from VTech</p>
+        </div>
+    
+        <div id="Contact" class="tabcontent">
+            <title>Contact</title>
+            <h3>Contact</h3>
+            <p>This is my email: henryfu897@vt.edu</p>
+        </div>
+    </body>
 
 </html>
