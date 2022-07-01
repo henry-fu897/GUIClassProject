@@ -4,10 +4,12 @@ const port = process.env.PORT || 5000
 
 const app = express()
 //const publicPath = path.join(__dirname, 'build')
-app.use(express.static(path.join(__dirname, 'hw1')))
-console.log(__dirname)
+app.use(express.static(path.join(__dirname)))
 app.get("/hw1", (req, res)=>{
     res.sendFile(__dirname+'/hw1/hw1.html')
+})
+app.get("/hw2", (req, res)=>{
+    res.sendFile(__dirname+'/hw2/public/index.html')
 })
 
 app.listen(port, (err)=>{
