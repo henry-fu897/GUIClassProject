@@ -18,8 +18,12 @@ app.get("/test", (req, res) => {
     res.json({ message: "Hello"})
 })
 app.get('*', (req, res) => {
+    res.sendFile(path.resolve(__dirname, '../client/build', 'index.html'));
+  });
+/*
+app.get('*', (req, res) => {
     res.sendFile(__dirname+'/hw2/public/index.html')
-})
+})*/
 
 app.listen(port, (err)=>{
     if (err) {
@@ -29,17 +33,3 @@ app.listen(port, (err)=>{
     console.log(`Server Running. Listening on port ${port}`)
 })
 
-function openTab(current, tabName) {
-    /*remove the class active  */
-    for(item of document.getElementsByClassName("tabbutton")) {
-        item.className.replace("active", "");
-    }
-    /*hide all other tabcontent  */
-    for(item of document.getElementsByClassName("tabcontent")) {
-        item.style.display = "none"
-    }
-
-    /*show current tab and add active to the button */
-    document.getElementById(tabName).style.display = "block";
-    current.currentTarget.className += " active";
-}
