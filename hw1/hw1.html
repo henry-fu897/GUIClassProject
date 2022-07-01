@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+  <div class = "header">
+    <script src = "hw1.js"></script>
+    <link rel="stylesheet" href="hw1.css">
+    <meta name="viewport" content="width=device-width, initial-scale=0.5">
+    <title> Homework 1</title>
+    <h1 style = "font-size: 5vw">Henry Fu Homework 1</h1>
+    <p> Website I am creating</p>
+    <div class = "tab">
+      <button class="tabbutton" onclick="openTab(event, 'Home')" id="default">Home</button>
+      <button class="tabbutton" onclick="openTab(event, 'About')">About Me</button>
+      <button class="tabbutton" onclick="openTab(event, 'Contact')">Contact Information</button>
+    </div>
+  </div>
+
+  <body>
+    <div id="Home" class="tabcontent">
+        <title>Home</title>
+        <h2>Home</h2>
+        <p>This is the beginning of the page</p>
+        <h3>NASA Pic of the Day</h3>
+        <img id="pic" src="" alt="NASA Picture Of The Day" width = 50%>
+    </div>
+
+    <div id="About" class="tabcontent">
+        <title>About Me</title>
+        <h3>About Me</h3>
+        <p>This is about me! Hi! I'm Henry.</p>
+        <p>Just a CS student from VTech</p>
+    </div>
+
+    <div id="Contact" class="tabcontent">
+        <title>Contact</title>
+        <h3>Contact</h3>
+        <p>This is my email: henryfu897@vt.edu</p>
+    </div>
+
+    <script>
+      document.getElementById("default").click(); 
+    </script>
+
+
+    <footer> This is my footer, hello there! Click on another tab to explore my site.</footer>
+  </body>
+</html>

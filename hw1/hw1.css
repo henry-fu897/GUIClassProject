@@ -1,0 +1,38 @@
+.header {
+  overflow: hidden;
+  background-color: #f0f9ffc4;
+  padding: 10px 
+}
+
+.header a {
+    float: left;
+    text-align: center;
+    font-size: 18px;
+    border-radius: 10px;
+  }
+
+body {
+    background-color: rgb(30, 203, 255);
+}
+.tab {
+    overflow: hidden;
+    background-color: aquamarine;
+    line-height: 200%;
+  }
+
+.tab button {
+    margin-left: 20%;
+    border: 3px;
+    color:azure;
+    background-color:deepskyblue;
+}
+
+.tab :active {
+    background-color: chartreuse;
+}
+
+.footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+}
