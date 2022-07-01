@@ -76,6 +76,10 @@ let itemsList = items.map((item, index) => {
 
 // puts in the array that has now been sorted appropriately
 function App() {
+  React.useEffect(() => {
+    console.log("hello world")
+  })
+
   return (
     <div style={gridContainer}>
       {itemsList}
