@@ -20,6 +20,9 @@ app.get("/test", (req, res) => {
 app.get('/bruh', (req, res) => {
     res.sendFile(path.join(__dirname, '/client/public/index.html'));
   });
+app.get('/home', (req, res) => {
+    res.sendFile(__dirname+"index.html")
+})
 /*
 app.get('*', (req, res) => {
     res.sendFile(__dirname+'/hw2/public/index.html')
