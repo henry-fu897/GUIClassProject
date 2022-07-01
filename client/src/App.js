@@ -6,9 +6,10 @@ import "./App.css";
 
 function App() {
   const [data, setData] = React.useState(null);
-
+console.log("hello people")
   React.useEffect(() => {
-    fetch("/api")
+    console.log("Foul Tarnished")
+    fetch("/test")
       .then((res) => res.json())
       .then((data) => setData(data.message));
   }, []);
