@@ -78,6 +78,7 @@ let itemsList = items.map((item, index) => {
 // puts in the array that has now been sorted appropriately
 function App() {
   const [data, setData] = React.useState(null)
+  console.log("hello")
   React.useEffect(() => {
     console.log("hello world")
     fetch("/test")
