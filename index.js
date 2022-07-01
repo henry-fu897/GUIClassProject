@@ -17,8 +17,8 @@ app.get("/hw4", (req, res)=>{
 app.get("/test", (req, res) => {
     res.json({ message: "Hello"})
 })
-app.get('*', (req, res) => {
-    res.sendFile(path.resolve(__dirname, '/client/build', 'index.html'));
+app.get('/bruh', (req, res) => {
+    res.sendFile(path.join(__dirname, '/client/public/index.html'));
   });
 /*
 app.get('*', (req, res) => {
