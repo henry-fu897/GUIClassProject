@@ -11,6 +11,12 @@ app.get("/hw1", (req, res)=>{
 app.get("/hw2", (req, res)=>{
     res.sendFile(__dirname+'/hw2/public/index.html')
 })
+app.get("/hw3", (req, res)=>{
+    res.sendFile(__dirname+'/hw3/hw3.html')
+})
+app.get("/hw4", (req, res)=>{
+    res.sendFile(__dirname+'/hw4/hw4.html')
+})
 
 app.listen(port, (err)=>{
     if (err) {
