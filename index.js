@@ -18,7 +18,7 @@ app.get("/test", (req, res) => {
     res.json({ message: "Hello"})
 })
 app.get('*', (req, res) => {
-    res.sendFile(path.resolve(__dirname, '../client/build', 'index.html'));
+    res.sendFile(path.resolve(__dirname, '/client/build', 'index.html'));
   });
 /*
 app.get('*', (req, res) => {
